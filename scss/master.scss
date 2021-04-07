@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap');
+
+body {
+  font-family: 'Karla', sans-serif;
+}
+
+.index {
+  background-image: url("../img/bg.jpg");
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.container {
+  text-align: center;
+
+  button {
+    font-weight: 800;
+    font-size: 3.75em;
+    border-radius: 100px;
+    border: none;
+    width: 50%;
+    padding: 2%;
+    margin-top: 10%;
+    background-color: #EBA4A9;
+    color: #925126;
+  }
+
+  .hero-image {
+    position: fixed;
+    bottom: 0;
+    left: 15%;
+  }
+}
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {}
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+  .container {
+    .logo {
+      img {
+        width: 249px;
+        height: 190px;
+      }
+    }
+
+    .start-button {
+      button {
+        font-size: 2.5em;
+      }
+    }
+    // .hero-image {
+    //   img {
+    //     width: 245px;
+    //     height: 400px;
+    //   }
+    // }
+  }
+}
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) {}
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199.98px) {}
+// X-Large devices (large desktops, less than 1400px)
+@media (max-width: 1399.98px) {}
