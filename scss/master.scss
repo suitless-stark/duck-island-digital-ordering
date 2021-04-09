@@ -2,39 +2,304 @@
 
 body {
   font-family: 'Karla', sans-serif;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  transition: 0.5s all ease;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  h1 {
+    font-weight: 800;
+    font-size: 3.75em;
+    margin: 0;
+  }
+
+  h2 {
+    font-weight: 800;
+    font-size: 3.125em;
+    margin: 0;
+  }
+
+  h3 {
+    font-weight: 500;
+    font-size: 3.125em;
+    margin: 0;
+  }
+
+  h4 {
+    font-weight: 500;
+    font-size: 2.5em;
+    margin: 0;
+  }
+
+  h5 {
+    font-weight: 500;
+    font-size: 2.25em;
+    margin: 0;
+  }
+
+  h6 {
+    font-weight: 500;
+    font-size: 1.875em;
+    margin: 0;
+  }
+
+  p {
+    font-weight: 500;
+    font-size: 1.25em;
+    margin: 0;
+  }
 }
 
 .index {
   background-image: url("../img/bg.jpg");
   background-position: center;
   background-attachment: fixed;
+
+  .container {
+    text-align: center;
+
+    button {
+      font-weight: 800;
+      font-size: 3.75em;
+      border-radius: 100px;
+      border: none;
+      width: 50%;
+      padding: 2%;
+      margin-top: 10%;
+      background-color: #EBA4A9;
+      color: #925126;
+      letter-spacing: 5px;
+    }
+
+    .hero-image {
+      position: fixed;
+      bottom: 0;
+      left: 15%;
+    }
+  }
 }
 
-.container {
-  text-align: center;
-
-  button {
-    font-weight: 800;
-    font-size: 3.75em;
-    border-radius: 100px;
-    border: none;
-    width: 50%;
-    padding: 2%;
-    margin-top: 10%;
-    background-color: #EBA4A9;
+.categories {
+  .container {
+    text-align: center;
     color: #925126;
-  }
+    letter-spacing: 3px;
 
-  .hero-image {
-    position: fixed;
-    bottom: 0;
-    left: 15%;
+    .logo {
+      img {
+        width: 249px;
+        height: 190px;
+      }
+    }
+
+    .text-area {
+      padding-bottom: 5%;
+    }
+
+    .catg {
+      .scoop {
+        background-color: #F7A0A9;
+      }
+
+      .sundae {
+        background-color: #E9AD43;
+      }
+
+      .pint {
+        background-color: #E1BD98;
+      }
+
+      .milkshake {
+        background-color: #F8B5B7;
+      }
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+
+      li {
+        width: 450px;
+        height: 250px;
+        list-style: none;
+        margin: 0 auto;
+        border-radius: 50px;
+        padding: 10% 0;
+        margin-bottom: 8%;
+
+        img {
+          width: auto;
+          height: 200px;
+        }
+      }
+    }
+  }
+}
+
+.size-page {
+  .container {
+    background-color: #FDD6E0;
+    text-align: center;
+    color: #925126;
+    letter-spacing: 5px;
+
+    .logo {
+      img {
+        width: 249px;
+        height: 190px;
+      }
+    }
+
+    .text-area {
+      padding: 3.2% 0;
+    }
+
+    ul {
+      display: flex;
+      padding: 0;
+
+      li {
+        width: 450px;
+        height: 320px;
+        list-style: none;
+        background-color: #F7A0A9;
+        border-radius: 50px;
+        margin: 0 auto;
+        padding-top: 3%;
+        margin-bottom: 2.5%;
+
+        img {
+          width: auto;
+          height: 200px;
+        }
+
+        h5 {
+          padding-top: 5%;
+        }
+      }
+    }
+
+    .base {
+      ul {
+        li {
+          width: 350px;
+          height: 245px;
+          padding-top: 4%;
+          margin-bottom: 1%;
+
+          #Cup {
+            width: 45%;
+          }
+
+          img {
+            width: auto;
+            height: 150px;
+          }
+        }
+      }
+    }
+
+    button {
+      font-weight: 500;
+      font-size: 2.5em;
+      border-radius: 100px;
+      border: none;
+      width: 35%;
+      padding: 2%;
+      margin: 4% 5%;
+      background-color: #F7A0A9;
+      color: #925126;
+      letter-spacing: 5px;
+    }
+  }
+}
+
+.flavours-page {
+  .container {
+    text-align: center;
+    color: #925126;
+    letter-spacing: 3px;
+
+    .logo {
+      img {
+        width: 249px;
+        height: 190px;
+      }
+    }
+
+    .text-area {
+      margin: 5% 0;
+    }
+
+    .flavours-section {
+      margin-bottom: 22%;
+
+      table {
+        tr {
+          td {
+            margin: 2%;
+            padding: 2%;
+
+            #fav,
+            #vegan {
+              opacity: 50%;
+            }
+
+            button {
+              font-weight: 500;
+              font-size: 1.75em;
+              border-radius: 100px;
+              border: none;
+              width: 100%;
+              padding: 10%;
+              margin: 4% 5%;
+              background-color: #F7A0A9;
+              color: #925126;
+            }
+
+            p {
+              letter-spacing: normal;
+            }
+
+            img {
+              width: 200px;
+            }
+          }
+        }
+      }
+
+      .buttons {
+        background-color: white;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        box-shadow: -2px -2px 20px 1px #888;
+
+        button {
+          font-weight: 500;
+          font-size: 1.75em;
+          border-radius: 100px;
+          border: none;
+          width: 35%;
+          padding: 2%;
+          margin: 4% 5%;
+          background-color: #F7A0A9;
+          color: #925126;
+        }
+      }
+    }
   }
 }
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {}
 // Small devices (landscape phones, less than 768px)
-@media (max-width: 767.98px) {
+@media (max-width: 769.98px) {
   .container {
     .logo {
       img {
@@ -48,12 +313,26 @@ body {
         font-size: 2.5em;
       }
     }
-    // .hero-image {
-    //   img {
-    //     width: 245px;
-    //     height: 400px;
-    //   }
-    // }
+  }
+
+  .categories {
+    .container {
+      ul {
+        display: block;
+      }
+    }
+  }
+
+  .size-page {
+    .container {
+      ul {
+        display: block;
+      }
+    }
+  }
+
+  .flavours-page {
+    font-size: 1.25em;
   }
 }
 // Medium devices (tablets, less than 992px)
