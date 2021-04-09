@@ -240,35 +240,105 @@ body {
     .flavours-section {
       margin-bottom: 22%;
 
-      table {
-        tr {
-          td {
-            margin: 2%;
-            padding: 2%;
+      #allTab:checked ~ nav label.all-tab,
+      #favTab:checked ~ nav label.fav-tab,
+      #veganTab:checked ~ nav label.vegan-tab {
+        color: #925126;
+        opacity: 100%;
+        font-size: 24px;
+      }
 
-            #fav,
-            #vegan {
-              opacity: 50%;
-            }
+      #favTab:checked ~ nav .slider {
+        left: 33.3%;
+      }
 
-            button {
-              font-weight: 500;
-              font-size: 1.75em;
-              border-radius: 100px;
-              border: none;
-              width: 100%;
-              padding: 10%;
-              margin: 4% 5%;
-              background-color: #F7A0A9;
-              color: #925126;
-            }
+      #veganTab:checked ~ nav .slider {
+        left: 66.6%;
+      }
 
-            p {
-              letter-spacing: normal;
-            }
+      #allTab:checked ~ section .content-1,
+      #favTab:checked ~ section .content-2,
+      #veganTab:checked ~ section .content-3 {
+        display: block;
+      }
 
-            img {
-              width: 200px;
+      .wrapper {
+        max-width: 700px;
+        margin: 100px auto;
+        width: 100%;
+        padding: 25px 30px 30px;
+        border-radius: 5px;
+        background: #fff;
+
+        input[type="radio"] {
+          display: none;
+        }
+
+        nav {
+          position: relative;
+          width: 80%;
+          height: 50px;
+          display: flex;
+          align-items: center;
+
+          label {
+            display: block;
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            line-height: 50px;
+            cursor: pointer;
+            position: relative;
+            z-index: 1;
+            color: #925126;
+            font-size: 17px;
+            border-radius: 5px;
+            margin: 0 5px;
+            transition: all 0.6s ease;
+            opacity: 20%;
+            letter-spacing: normal;
+          }
+
+          .slider {
+            position: absolute;
+            height: 100%;
+            width: 33.3%;
+            left: 0;
+            bottom: 0;
+            z-index: 0;
+            border-radius: 50px;
+            background: #E9AD43;
+            transition: all 0.6s ease;
+          }
+        }
+
+        section {
+          .content {
+            display: none;
+            background: #fff;
+          }
+
+          .content-1,
+          .content-2,
+          .content-3 {
+            table {
+              margin-top: 5%;
+
+              tr {
+                td {
+                  margin: 2%;
+                  padding: 2%;
+                  text-align: center;
+
+                  p {
+                    letter-spacing: normal;
+                  }
+
+                  img {
+                    width: 200px;
+                  }
+                }
+              }
             }
           }
         }
@@ -279,7 +349,6 @@ body {
         width: 100%;
         position: fixed;
         bottom: 0;
-        box-shadow: -2px -2px 20px 1px #888;
 
         button {
           font-weight: 500;
@@ -289,10 +358,143 @@ body {
           width: 35%;
           padding: 2%;
           margin: 4% 5%;
-          background-color: #F7A0A9;
+          background-color: #E9AD43;
           color: #925126;
         }
       }
+    }
+  }
+}
+
+.cart-page {
+  background-color: #FEF5D9;
+  text-align: center;
+  color: #925126;
+  letter-spacing: 3px;
+
+  .logo {
+    img {
+      width: 249px;
+      height: 190px;
+    }
+  }
+
+  .text-area {
+    margin: 5% 0;
+    padding-bottom: 5%;
+  }
+
+  .order-section {
+    table {
+      align-items: center;
+
+      tr {
+        td {
+          padding: 2%;
+
+          h4,
+          h6 {
+            padding: 2%;
+            letter-spacing: 0.5px;
+          }
+
+          button {
+            font-weight: 500;
+            font-size: 1.5em;
+            border-radius: 100px;
+            border: none;
+            width: 70%;
+            padding: 3%;
+            margin: 4% 5%;
+            border: 1px solid #925126;
+            background: none;
+            color: #925126;
+            letter-spacing: 3px;
+          }
+
+          img {
+            width: 300px;
+          }
+
+          ol {
+            li {
+              text-align: left;
+              letter-spacing: normal;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .buttons {
+    background-color: #FEF5D9;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    button {
+      font-weight: 500;
+      font-size: 1.75em;
+      border-radius: 100px;
+      border: none;
+      width: 35%;
+      padding: 2%;
+      margin: 4% 5%;
+      background-color: #E9AD43;
+      color: #925126;
+    }
+  }
+}
+
+.payment-page {
+  background-color: #E5CFE8;
+  text-align: center;
+  color: #925126;
+  letter-spacing: 3px;
+
+  .logo {
+    img {
+      width: 249px;
+      height: 190px;
+    }
+  }
+
+  .text-area {
+    margin: 5% 0;
+    padding-bottom: 5%;
+  }
+
+  .payment-options {
+    ul {
+      li {
+        width: 40%;
+        padding: 5%;
+        margin: 5%;
+        background-color: #DAA6E2;
+        list-style: none;
+        letter-spacing: 1px;
+        border-radius: 100px;
+      }
+    }
+  }
+
+  .buttons {
+    background-color: #E5CFE8;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+
+    button {
+      font-weight: 500;
+      font-size: 1.75em;
+      border-radius: 100px;
+      border: none;
+      width: 35%;
+      padding: 2%;
+      margin: 4% 5%;
+      background-color: #DAA6E2;
+      color: #925126;
     }
   }
 }
