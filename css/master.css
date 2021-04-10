@@ -44,6 +44,8 @@ body {
   background-attachment: fixed; }
   .index .container {
     text-align: center; }
+    .index .container .logo {
+      margin-top: 10%; }
     .index .container button {
       font-weight: 800;
       font-size: 3.75em;
@@ -51,7 +53,7 @@ body {
       border: none;
       width: 50%;
       padding: 2%;
-      margin-top: 10%;
+      margin-top: 20%;
       background-color: #EBA4A9;
       color: #925126;
       letter-spacing: 5px; }
@@ -279,111 +281,127 @@ body {
   text-align: center;
   color: #925126;
   letter-spacing: 3px; }
-  .cart-page .logo img {
-    width: 249px;
-    height: 190px; }
-  .cart-page .text-area {
-    margin: 5% 0;
-    padding-bottom: 5%; }
-  .cart-page .order-section table {
-    align-items: center; }
-    .cart-page .order-section table tr td {
-      padding: 2%; }
-      .cart-page .order-section table tr td h4,
-      .cart-page .order-section table tr td h6 {
-        padding: 2%;
-        letter-spacing: 0.5px; }
-      .cart-page .order-section table tr td button {
+  .cart-page .container {
+    margin-bottom: 20%; }
+    .cart-page .container .logo img {
+      width: 249px;
+      height: 190px; }
+    .cart-page .container .text-area {
+      margin: 5% 0;
+      padding-bottom: 5%; }
+    .cart-page .container .order-section table {
+      align-items: center; }
+      .cart-page .container .order-section table tr td {
+        padding: 2%; }
+        .cart-page .container .order-section table tr td h4,
+        .cart-page .container .order-section table tr td h6 {
+          padding: 2%;
+          letter-spacing: 0.5px; }
+        .cart-page .container .order-section table tr td button {
+          font-weight: 500;
+          font-size: 1.5em;
+          border-radius: 100px;
+          border: none;
+          width: 70%;
+          padding: 3%;
+          margin: 4% 5%;
+          border: 1px solid #925126;
+          background: none;
+          color: #925126;
+          letter-spacing: 3px; }
+        .cart-page .container .order-section table tr td img {
+          width: 300px; }
+        .cart-page .container .order-section table tr td ol li {
+          text-align: left;
+          letter-spacing: normal; }
+    .cart-page .container .buttons {
+      background-color: #FEF5D9;
+      width: 100%;
+      position: fixed;
+      bottom: 0; }
+      .cart-page .container .buttons button {
         font-weight: 500;
-        font-size: 1.5em;
+        font-size: 1.75em;
         border-radius: 100px;
         border: none;
-        width: 70%;
-        padding: 3%;
+        width: 35%;
+        padding: 2%;
         margin: 4% 5%;
-        border: 1px solid #925126;
-        background: none;
-        color: #925126;
-        letter-spacing: 3px; }
-      .cart-page .order-section table tr td img {
-        width: 300px; }
-      .cart-page .order-section table tr td ol li {
-        text-align: left;
-        letter-spacing: normal; }
-  .cart-page .buttons {
-    background-color: #FEF5D9;
-    width: 100%;
-    position: fixed;
-    bottom: 0; }
-    .cart-page .buttons button {
-      font-weight: 500;
-      font-size: 1.75em;
-      border-radius: 100px;
-      border: none;
-      width: 35%;
-      padding: 2%;
-      margin: 4% 5%;
-      background-color: #E9AD43;
-      color: #925126; }
+        background-color: #E9AD43;
+        color: #925126; }
 
 .payment-page {
   background-color: #E5CFE8;
   text-align: center;
   color: #925126;
   letter-spacing: 3px; }
-  .payment-page .logo img {
-    width: 249px;
-    height: 190px; }
-  .payment-page .text-area {
-    margin: 5% 0;
-    padding-bottom: 5%; }
-  .payment-page .payment-options {
-    margin-left: 18%; }
-    .payment-page .payment-options ul li {
-      width: 50%;
-      padding: 5%;
-      margin: 5%;
-      background-color: #DAA6E2;
-      list-style: none;
-      letter-spacing: 1px;
-      border-radius: 100px; }
-      .payment-page .payment-options ul li img {
-        width: 70%;
-        margin-bottom: 8%; }
-      .payment-page .payment-options ul li h1 {
-        padding: 10% 5%;
-        font-size: 100px;
-        letter-spacing: normal; }
-  .payment-page .buttons {
-    background-color: #E5CFE8;
-    width: 100%;
-    position: fixed;
-    bottom: 0; }
-    .payment-page .buttons button {
-      font-weight: 500;
-      font-size: 1.75em;
-      border-radius: 100px;
-      border: none;
-      width: 35%;
-      padding: 2%;
-      margin: 4% 5%;
-      background-color: #DAA6E2;
-      color: #925126; }
+  .payment-page .container {
+    margin-bottom: 20%; }
+    .payment-page .container .logo img {
+      width: 249px;
+      height: 190px; }
+    .payment-page .container .text-area {
+      margin: 5% 0;
+      padding-bottom: 5%; }
+    .payment-page .container .payment-options ul {
+      padding-left: 23%; }
+      .payment-page .container .payment-options ul li {
+        width: 50%;
+        padding: 5%;
+        margin: 5%;
+        background-color: #DAA6E2;
+        list-style: none;
+        letter-spacing: 1px;
+        border-radius: 50px; }
+        .payment-page .container .payment-options ul li img {
+          width: 70%;
+          padding-top: 5%; }
+        .payment-page .container .payment-options ul li h5 {
+          margin-top: 2%; }
+        .payment-page .container .payment-options ul li h1 {
+          font-size: 100px;
+          letter-spacing: normal; }
+    .payment-page .container .buttons {
+      background-color: #E5CFE8;
+      width: 100%;
+      position: fixed;
+      bottom: 0; }
+      .payment-page .container .buttons button {
+        font-weight: 500;
+        font-size: 1.75em;
+        border-radius: 100px;
+        border: none;
+        width: 35%;
+        padding: 2%;
+        margin: 4% 5%;
+        background-color: #DAA6E2;
+        color: #925126; }
 
 @media (max-width: 769.98px) {
-  .container .logo img {
+  .index .container .logo img {
     width: 249px;
     height: 190px; }
-  .container .start-button button {
+  .index .container .start-button button {
+    margin-top: 10%;
     font-size: 2.5em; }
 
+  .categories .container h1 {
+    font-size: 2.5em; }
   .categories .container ul {
     display: block; }
 
+  .size-page .container h1 {
+    font-size: 2.5em; }
   .size-page .container ul {
     display: block; }
 
-  .flavours-page {
-    font-size: 1.25em; } }
+  .flavours-page .container h1 {
+    font-size: 2.5em; }
+
+  .cart-page h1,
+  .payment-page h1,
+  .card h1,
+  .cash h1 {
+    font-size: 2.5em; } }
 
 /*# sourceMappingURL=master.css.map */
