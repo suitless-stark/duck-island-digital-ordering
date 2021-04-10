@@ -1,9 +1,16 @@
 // import google fonts
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap');
-
+$fontFace: 'Karla', sans-serif;
+$fontColor: #925126;
+$primaryPink: #F7A0A9;
+$primaryBrown: #E9AD43;
+$secondaryPink: #FDD6E0;
+$secondaryBrown: #FEF5D9;
+$primaryPurple : #E5CFE8;
+$secondaryPurple : #DAA6E2;
 // universal css
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: $fontFace;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -14,7 +21,6 @@ body {
     text-decoration: none;
     color: inherit;
   }
-
   // header set
   h1 {
     font-weight: 800;
@@ -58,7 +64,6 @@ body {
     margin: 0;
   }
 }
-
 // custom css for index page
 .index {
   background-image: url("../img/bg.jpg");
@@ -81,7 +86,7 @@ body {
       padding: 2%;
       margin-top: 20%;
       background-color: #EBA4A9;
-      color: #925126;
+      color: $fontColor;
       letter-spacing: 5px;
     }
 
@@ -92,12 +97,11 @@ body {
     }
   }
 }
-
 // custom css for categories page
 .categories {
   .container {
     text-align: center;
-    color: #925126;
+    color: $fontColor;
     letter-spacing: 3px;
 
     .logo {
@@ -113,19 +117,19 @@ body {
 
     .catg {
       .scoop {
-        background-color: #F7A0A9;
+        background-color: $primaryPink;
       }
 
       .sundae {
-        background-color: #E9AD43;
+        background-color: $primaryBrown;
       }
 
       .pint {
-        background-color: #E1BD98;
+        background-color: $primaryBrown;
       }
 
       .milkshake {
-        background-color: #F8B5B7;
+        background-color: $primaryPink;
       }
     }
 
@@ -150,14 +154,13 @@ body {
     }
   }
 }
-
 // custom css for size page
 .size-page {
-  background-color: #FDD6E0;
+  background-color: $secondaryPink;
 
   .container {
     text-align: center;
-    color: #925126;
+    color: $fontColor;
     letter-spacing: 5px;
     margin-bottom: 20%;
 
@@ -171,12 +174,10 @@ body {
     .text-area {
       padding: 3.2% 0;
     }
-
     // hide radio buttons
     input[type="radio"] {
       display: none;
     }
-
     // change label color when radio button checked
     #coneBase:checked ~ ul li label.cone-base,
     #cupBase:checked ~ ul li label.cup-base,
@@ -184,7 +185,7 @@ body {
     #singleSize:checked ~ nav ul li label.single-size,
     #tiddlerSize:checked ~ nav ul li label.tiddler-size,
     #tripleSize:checked ~ nav ul li label.triple-size {
-      background-color: #F7A0A9;
+      background-color: $primaryPink;
     }
 
     ul {
@@ -195,7 +196,7 @@ body {
         width: 350px;
         height: 300px;
         list-style: none;
-        border: 1px solid #F7A0A9;
+        border: 1px solid $primaryPink;
         border-radius: 50px;
         margin: 0 auto 2.5%;
 
@@ -203,7 +204,7 @@ body {
           display: block;
           height: 302px;
           width: 352px;
-          color: #925126;
+          color: $fontColor;
           border-radius: 50px;
           transition: all 0.6s ease;
         }
@@ -235,7 +236,7 @@ body {
             display: block;
             height: 302px;
             width: 352px;
-            color: #925126;
+            color: $fontColor;
             border-radius: 50px;
             transition: all 0.6s ease;
 
@@ -254,7 +255,7 @@ body {
     }
 
     .buttons {
-      background-color: #FDD6E0;
+      background-color: $secondaryPink;
       width: 100%;
       position: fixed;
       bottom: 0;
@@ -267,18 +268,17 @@ body {
         width: 35%;
         padding: 2%;
         margin: 4% 5%;
-        background-color: #F7A0A9;
-        color: #925126;
+        background-color: $primaryPink;
+        color: $fontColor;
       }
     }
   }
 }
-
 // custom css for flavours page
 .flavours-page {
   .container {
     text-align: center;
-    color: #925126;
+    color: $fontColor;
     letter-spacing: 3px;
 
     .logo {
@@ -294,26 +294,22 @@ body {
 
     .flavours-section {
       margin-bottom: 22%;
-
       // change label's opacity, font size and color when radio buttons checked
       #allTab:checked ~ nav label.all-tab,
       #favTab:checked ~ nav label.fav-tab,
       #veganTab:checked ~ nav label.vegan-tab {
-        color: #925126;
+        color: $fontColor;
         opacity: 100%;
         font-size: 24px;
       }
-
       // move slider on favourites tab when #favTab checked
       #favTab:checked ~ nav .slider {
         left: 33.3%;
       }
-
       // move slider on vegan tab when #veganTab checked
       #veganTab:checked ~ nav .slider {
         left: 66.6%;
       }
-
       // display the respective tabs content when they are checked
       #allTab:checked ~ section .content-1,
       #favTab:checked ~ section .content-2,
@@ -328,7 +324,6 @@ body {
         padding: 25px 30px 30px;
         border-radius: 5px;
         background: #fff;
-
         // hide radio buttons
         input[type="radio"] {
           display: none;
@@ -350,7 +345,7 @@ body {
             cursor: pointer;
             position: relative;
             z-index: 1;
-            color: #925126;
+            color: $fontColor;
             font-size: 17px;
             border-radius: 5px;
             margin: 0 5px;
@@ -368,11 +363,10 @@ body {
             bottom: 0;
             z-index: 0;
             border-radius: 50px;
-            background: #E9AD43;
+            background: $primaryBrown;
             transition: all 0.6s ease;
           }
         }
-
         // defalut hide contents
         section {
           .content {
@@ -420,23 +414,23 @@ body {
           width: 35%;
           padding: 2%;
           margin: 4% 5%;
-          background-color: #E9AD43;
-          color: #925126;
+          background-color: $primaryBrown;
+          color: $fontColor;
         }
       }
     }
   }
 }
-
 // custom css for cart page
 .cart-page {
-  background-color: #FEF5D9;
+  background-color: $secondaryBrown;
   text-align: center;
-  color: #925126;
+  color: $fontColor;
   letter-spacing: 3px;
 
   .container {
     margin-bottom: 20%;
+
     .logo {
       img {
         width: 249px;
@@ -471,9 +465,9 @@ body {
               width: 70%;
               padding: 3%;
               margin: 4% 5%;
-              border: 1px solid #925126;
+              border: 1px solid $fontColor;
               background: none;
-              color: #925126;
+              color: $fontColor;
               letter-spacing: 3px;
             }
 
@@ -493,7 +487,7 @@ body {
     }
 
     .buttons {
-      background-color: #FEF5D9;
+      background-color: $secondaryBrown;
       width: 100%;
       position: fixed;
       bottom: 0;
@@ -506,22 +500,22 @@ body {
         width: 35%;
         padding: 2%;
         margin: 4% 5%;
-        background-color: #E9AD43;
-        color: #925126;
+        background-color: $primaryBrown;
+        color: $fontColor;
       }
     }
   }
 }
-
 // custom css for payment pages
 .payment-page {
-  background-color: #E5CFE8;
+  background-color: $primaryPurple;
   text-align: center;
-  color: #925126;
+  color: $fontColor;
   letter-spacing: 3px;
 
   .container {
     margin-bottom: 20%;
+
     .logo {
       img {
         width: 249px;
@@ -542,7 +536,7 @@ body {
           width: 50%;
           padding: 5%;
           margin: 5%;
-          background-color: #DAA6E2;
+          background-color: $secondaryPurple;
           list-style: none;
           letter-spacing: 1px;
           border-radius: 50px;
@@ -565,7 +559,7 @@ body {
     }
 
     .buttons {
-      background-color: #E5CFE8;
+      background-color: $primaryPurple;
       width: 100%;
       position: fixed;
       bottom: 0;
@@ -578,8 +572,8 @@ body {
         width: 35%;
         padding: 2%;
         margin: 4% 5%;
-        background-color: #DAA6E2;
-        color: #925126;
+        background-color: $secondaryPurple;
+        color: $fontColor;
       }
     }
   }
@@ -607,11 +601,11 @@ body {
   }
 
   .categories {
-
     .container {
       h1 {
         font-size: 2.5em;
       }
+
       ul {
         display: block;
       }
@@ -623,6 +617,7 @@ body {
       h1 {
         font-size: 2.5em;
       }
+
       ul {
         display: block;
       }
@@ -637,10 +632,10 @@ body {
     }
   }
 
-  .cart-page,
-  .payment-page,
   .card,
-  .cash {
+  .cart-page,
+  .cash,
+  .payment-page {
     h1 {
       font-size: 2.5em;
     }

@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap");
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -76,9 +76,9 @@ body {
   .categories .container .catg .sundae {
     background-color: #E9AD43; }
   .categories .container .catg .pint {
-    background-color: #E1BD98; }
+    background-color: #E9AD43; }
   .categories .container .catg .milkshake {
-    background-color: #F8B5B7; }
+    background-color: #F7A0A9; }
   .categories .container ul {
     display: flex;
     padding: 0; }
@@ -398,10 +398,10 @@ body {
   .flavours-page .container h1 {
     font-size: 2.5em; }
 
-  .cart-page h1,
-  .payment-page h1,
   .card h1,
-  .cash h1 {
+  .cart-page h1,
+  .cash h1,
+  .payment-page h1 {
     font-size: 2.5em; } }
 
 /*# sourceMappingURL=master.css.map */
