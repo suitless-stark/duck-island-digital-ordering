@@ -1,5 +1,7 @@
+// import google fonts
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap');
 
+// universal css
 body {
   font-family: 'Karla', sans-serif;
   box-sizing: border-box;
@@ -13,6 +15,7 @@ body {
     color: inherit;
   }
 
+  // header set
   h1 {
     font-weight: 800;
     font-size: 3.75em;
@@ -56,6 +59,7 @@ body {
   }
 }
 
+// custom css for index page
 .index {
   background-image: url("../img/bg.jpg");
   background-position: center;
@@ -89,6 +93,7 @@ body {
   }
 }
 
+// custom css for categories page
 .categories {
   .container {
     text-align: center;
@@ -146,6 +151,7 @@ body {
   }
 }
 
+// custom css for size page
 .size-page {
   background-color: #FDD6E0;
 
@@ -166,10 +172,12 @@ body {
       padding: 3.2% 0;
     }
 
+    // hide radio buttons
     input[type="radio"] {
       display: none;
     }
 
+    // change label color when radio button checked
     #coneBase:checked ~ ul li label.cone-base,
     #cupBase:checked ~ ul li label.cup-base,
     #doubleSize:checked ~ nav ul li label.double-size,
@@ -266,6 +274,7 @@ body {
   }
 }
 
+// custom css for flavours page
 .flavours-page {
   .container {
     text-align: center;
@@ -286,6 +295,7 @@ body {
     .flavours-section {
       margin-bottom: 22%;
 
+      // change label's opacity, font size and color when radio buttons checked
       #allTab:checked ~ nav label.all-tab,
       #favTab:checked ~ nav label.fav-tab,
       #veganTab:checked ~ nav label.vegan-tab {
@@ -294,14 +304,17 @@ body {
         font-size: 24px;
       }
 
+      // move slider on favourites tab when #favTab checked
       #favTab:checked ~ nav .slider {
         left: 33.3%;
       }
 
+      // move slider on vegan tab when #veganTab checked
       #veganTab:checked ~ nav .slider {
         left: 66.6%;
       }
 
+      // display the respective tabs content when they are checked
       #allTab:checked ~ section .content-1,
       #favTab:checked ~ section .content-2,
       #veganTab:checked ~ section .content-3 {
@@ -316,6 +329,7 @@ body {
         border-radius: 5px;
         background: #fff;
 
+        // hide radio buttons
         input[type="radio"] {
           display: none;
         }
@@ -341,6 +355,7 @@ body {
             border-radius: 5px;
             margin: 0 5px;
             transition: all 0.6s ease;
+            // default opacity of all labels set to 20%
             opacity: 20%;
             letter-spacing: normal;
           }
@@ -358,6 +373,7 @@ body {
           }
         }
 
+        // defalut hide contents
         section {
           .content {
             display: none;
@@ -412,6 +428,7 @@ body {
   }
 }
 
+// custom css for cart page
 .cart-page {
   background-color: #FEF5D9;
   text-align: center;
@@ -496,6 +513,7 @@ body {
   }
 }
 
+// custom css for payment pages
 .payment-page {
   background-color: #E5CFE8;
   text-align: center;

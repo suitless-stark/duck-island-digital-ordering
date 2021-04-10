@@ -5,24 +5,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- link external css -->
   <link rel="stylesheet" href="css/master.css">
   <title>Size</title>
 </head>
 
 <body class="size-page">
   <div class="container">
+
+    <!-- logo div -->
     <div class="row logo">
       <a href="categories.html"><img src="img/duck-island-logo-gold.png" alt="Duck Island Logo"></a>
     </div>
+
+    <!-- header text div -->
     <div class="row text-area">
       <h1>Choose your size</h1>
     </div>
 
+    <!-- size selection div -->
     <div class="row sizes">
+
+      <!-- radio buttons for size selection -->
       <input type="radio" name="size" checked id="singleSize">
       <input type="radio" name="size" id="doubleSize">
       <input type="radio" name="size" id="tripleSize">
       <input type="radio" name="size" id="tiddlerSize">
+
+      <!-- labels for radio buttons -->
       <nav>
         <ul>
           <li>
@@ -58,12 +68,20 @@
         </ul>
       </nav>
     </div>
+
+    <!-- header text div -->
     <div class="row text-area">
       <h1>Choose your base</h1>
     </div>
+
+    <!-- base selection div -->
     <div class="row base">
+
+      <!-- radio buttons for base selection -->
       <input type="radio" name="base" id="cupBase" checked>
       <input type="radio" name="base" id="coneBase">
+
+      <!-- labels for radio buttons -->
       <ul>
         <li>
           <label for="cupBase" class="cup-base">
@@ -76,10 +94,11 @@
             <img src="img/assets/SVG/cone.svg" alt="Cone Base Image"><br>
             <h5>Cone</h5>
           </label>
-
         </li>
       </ul>
     </div>
+
+    <!-- navigation buttons div -->
     <div class="row buttons">
       <button type="button" name="button"><a href="categories.html">Go Back</a></button>
       <button type="button" name="button"><a href="flavours.html">Next</a></button>

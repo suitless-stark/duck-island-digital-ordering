@@ -5,31 +5,52 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <!-- Link external css -->
   <link rel="stylesheet" href="css/master.css">
   <title>Flavours</title>
 </head>
 
 <body class="flavours-page">
   <div class="container">
+
+    <!-- Logo div -->
     <div class="row logo">
       <a href="categories.html"><img src="img/duck-island-logo-gold.png" alt="Duck Island Logo"></a>
     </div>
+
+    <!-- Header text div -->
     <div class="row text-area">
       <h1>Select your scoops</h1>
     </div>
+
+    <!-- Flavours div -->
     <div class="row flavours-section">
+
+      <!-- Flavours content div -->
       <div class="wrapper" align="center">
+
+        <!-- Radio buttons for tabs -->
         <input type="radio" name="slider" checked id="allTab">
         <input type="radio" name="slider" id="favTab">
         <input type="radio" name="slider" id="veganTab">
+
+        <!-- Labels for radio buttons -->
         <nav>
           <label for="allTab" class="all-tab">All</label>
           <label for="favTab" class="fav-tab">Favourites</label>
           <label for="veganTab" class="vegan-tab">Vegan</label>
+
+          <!-- Slider div -->
           <div class="slider"></div>
         </nav>
+
+        <!-- different content for tabs -->
         <section>
+
+          <!-- content for tab 1 -->
           <div class="content content-1">
+
+            <!-- all flavours table -->
             <table align="center">
               <tr>
                 <td><img src="img/flavours/new-flavour-ambrosia-600x600-center-top-scaled.png" alt=""></td>
@@ -177,7 +198,11 @@
               </tr>
             </table>
           </div>
+
+          <!-- content for tab 2 -->
           <div class="content content-2">
+
+            <!-- favourites flavours table -->
             <table align="center">
               <tr>
                 <td><img src="img/flavours/new-flavour-blueberry-buttermilk-gooey-butter-cake-600x600-center-top-scaled.png" alt=""></td>
@@ -229,7 +254,11 @@
               </tr>
             </table>
           </div>
+
+          <!-- content for tab 3 -->
           <div class="content content-3">
+
+            <!-- vegan flavours table -->
             <table align="center">
               <tr>
                 <td><img src="img/flavours/new-flavour-black-sticky-rice-vegan-600x600-center-top-scaled.png" alt=""></td>
@@ -284,6 +313,8 @@
           </div>
         </section>
       </div>
+
+      <!-- navigation buttons div  -->
       <div class="buttons">
         <button type="button" name="button"><a href="size.html">Go Back</a></button>
         <button type="button" name="button"><a href="cart.html">View Order</a></button>
