@@ -17,44 +17,66 @@
     <div class="row text-area">
       <h1>Choose your size</h1>
     </div>
+
     <div class="row sizes">
-      <ul>
-        <li>
-          <img src="img/assets/SVG/single.svg" alt="Single Base Image"><br>
-          <h5>Single - 6$</h5>
-          <p>1-2 flavours</p>
-        </li>
-        <li>
-          <img src="img/assets/SVG/double.svg" alt="Double Base Image"><br>
-          <h5>Double - 8$</h5>
-          <p>2-3 flavours</p>
-        </li>
-      </ul>
-      <ul>
-        <li>
-          <img src="img/assets/SVG/triple.svg" alt="Triple Base Image"><br>
-          <h5>Triple - 9.5$</h5>
-          <p>3-4 flavours</p>
-        </li>
-        <li>
-          <img src="img/assets/SVG/tiddler.svg" alt="Tiddler Base Image"><br>
-          <h5>Tiddler - 4$</h5>
-          <p>1 flavour</p>
-        </li>
-      </ul>
+      <input type="radio" name="size" checked id="singleSize">
+      <input type="radio" name="size" id="doubleSize">
+      <input type="radio" name="size" id="tripleSize">
+      <input type="radio" name="size" id="tiddlerSize">
+      <nav>
+        <ul>
+          <li>
+            <label for="singleSize" class="single-size">
+              <img src="img/assets/SVG/single.svg" alt="Single Base Image"><br>
+              <h5>Single - 6$</h5>
+              <p>1-2 flavours</p>
+            </label>
+          </li>
+          <li>
+            <label for="doubleSize" class="double-size">
+              <img src="img/assets/SVG/double.svg" alt="Double Base Image"><br>
+              <h5>Double - 8$</h5>
+              <p>2-3 flavours</p>
+            </label>
+          </li>
+        </ul>
+        <ul>
+          <li>
+            <label for="tripleSize" class="triple-size">
+              <img src="img/assets/SVG/triple.svg" alt="Triple Base Image"><br>
+              <h5>Triple - 9.5$</h5>
+              <p>3-4 flavours</p>
+            </label>
+          </li>
+          <li>
+            <label for="tiddlerSize" class="tiddler-size">
+              <img src="img/assets/SVG/tiddler.svg" alt="Tiddler Base Image"><br>
+              <h5>Tiddler - 4$</h5>
+              <p>1 flavour</p>
+            </label>
+          </li>
+        </ul>
+      </nav>
     </div>
     <div class="row text-area">
       <h1>Choose your base</h1>
     </div>
     <div class="row base">
+      <input type="radio" name="base" id="cupBase" checked>
+      <input type="radio" name="base" id="coneBase">
       <ul>
         <li>
-          <img src="img/assets/SVG/cup.svg" alt="Cup Base Image" id="Cup"><br>
-          <h5>Cup</h5>
+          <label for="cupBase" class="cup-base">
+            <img src="img/assets/SVG/cup.svg" alt="Cup Base Image" id="Cup"><br>
+            <h5>Cup</h5>
+          </label>
         </li>
         <li>
-          <img src="img/assets/SVG/cone.svg" alt="Cone Base Image"><br>
-          <h5>Cone</h5>
+          <label for="coneBase" class="cone-base">
+            <img src="img/assets/SVG/cone.svg" alt="Cone Base Image"><br>
+            <h5>Cone</h5>
+          </label>
+
         </li>
       </ul>
     </div>
