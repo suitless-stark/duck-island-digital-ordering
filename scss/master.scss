@@ -1,21 +1,31 @@
 // import google fonts
 @import url('https://fonts.googleapis.com/css2?family=Karla:wght@500;800&display=swap');
+// setting reset mixin
+@mixin reset {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+// setting animation to smooth
+@mixin smooth-animation {
+  transition: 0.5s all ease;
+}
 $fontFace: 'Karla', sans-serif;
 $fontColor: #925126;
 $primaryPink: #F7A0A9;
 $primaryBrown: #E9AD43;
 $secondaryPink: #FDD6E0;
 $secondaryBrown: #FEF5D9;
-$primaryPurple : #E5CFE8;
-$secondaryPurple : #DAA6E2;
+$primaryPurple: #E5CFE8;
+$secondaryPurple: #DAA6E2;
+
+
 // universal css
 body {
+  @include reset;
+  @include smooth-animation;
   font-family: $fontFace;
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  scroll-behavior: smooth;
-  transition: 0.5s all ease;
 
   a {
     text-decoration: none;
@@ -65,6 +75,7 @@ body {
   }
 }
 // custom css for index page
+
 .index {
   background-image: url("../img/bg.jpg");
   background-position: center;
@@ -98,6 +109,7 @@ body {
   }
 }
 // custom css for categories page
+
 .categories {
   .container {
     text-align: center;
@@ -155,6 +167,7 @@ body {
   }
 }
 // custom css for size page
+
 .size-page {
   background-color: $secondaryPink;
 
@@ -206,7 +219,7 @@ body {
           width: 352px;
           color: $fontColor;
           border-radius: 50px;
-          transition: all 0.6s ease;
+          @include smooth-animation;
         }
 
         img {
@@ -238,7 +251,7 @@ body {
             width: 352px;
             color: $fontColor;
             border-radius: 50px;
-            transition: all 0.6s ease;
+            @include smooth-animation;
 
             img {
               width: auto;
@@ -275,6 +288,7 @@ body {
   }
 }
 // custom css for flavours page
+
 .flavours-page {
   .container {
     text-align: center;
@@ -349,7 +363,7 @@ body {
             font-size: 17px;
             border-radius: 5px;
             margin: 0 5px;
-            transition: all 0.6s ease;
+            @include smooth-animation;
             // default opacity of all labels set to 20%
             opacity: 20%;
             letter-spacing: normal;
@@ -364,7 +378,7 @@ body {
             z-index: 0;
             border-radius: 50px;
             background: $primaryBrown;
-            transition: all 0.6s ease;
+            @include smooth-animation;
           }
         }
         // defalut hide contents
@@ -422,6 +436,7 @@ body {
   }
 }
 // custom css for cart page
+
 .cart-page {
   background-color: $secondaryBrown;
   text-align: center;
@@ -507,6 +522,7 @@ body {
   }
 }
 // custom css for payment pages
+
 .payment-page {
   background-color: $primaryPurple;
   text-align: center;
